@@ -12,7 +12,7 @@ jobs:
       - name: Workflow triggers
         run: echo "Workflow Triggers"
       - name: Repository Variables
-        run: echo "Hello, {{ vars.NAME }}"
+        run: echo "Hello, ${{ vars.NAME }}"
       - name: Repository secrets
-        run: echo "Password is {{ secrets.PASSWORD }}"
+        run: echo "Password is ${{ secrets.PASSWORD }}"
   
