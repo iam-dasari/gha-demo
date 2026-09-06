@@ -6,6 +6,10 @@ on:
      description: Choose the environment to deploy
      required: true #mandatory
      default: dev
+     options:
+       - dev
+       - test
+       - prod
 jobs:
   inputs-demo:
    runs-on: ubuntu-latest
