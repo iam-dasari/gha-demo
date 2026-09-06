@@ -7,4 +7,7 @@ jobs:
       - name: use context variables
         run: |
           echo "THis is triggered by ${{ github.actor }}"
-          echo " Repository name ${{ github.repository }}"  
+          echo " Repository name ${{ github.repository }}" 
+      - name: print all variables under github
+        run: "${{ toJson(github) }}"
+          
