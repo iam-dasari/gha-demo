@@ -1,0 +1,12 @@
+name: Workflow triggers
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build_trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Workflow triggers
+        run: echo "Workflow Triggers"
+  
