@@ -1,0 +1,10 @@
+name: Context Demo
+on: push
+jobs:
+  context_demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: use context variables
+        run: |
+          echo "THis is triggered by ${{ github.actor }}"
+          echo " Repository name ${{ github.repository }}"  
