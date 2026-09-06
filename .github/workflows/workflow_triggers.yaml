@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - main
+      - develop
+      - 'release/**'
 jobs:
   build_trigger:
     runs-on: ubuntu-latest
