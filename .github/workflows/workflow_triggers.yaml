@@ -11,4 +11,6 @@ jobs:
     steps:
       - name: Workflow triggers
         run: echo "Workflow Triggers"
+      - name: Environemnt Variables
+        run: echo "Hello, {{ vars.NAME }}
   
