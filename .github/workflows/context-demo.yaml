@@ -9,5 +9,5 @@ jobs:
           echo "THis is triggered by ${{ github.actor }}"
           echo " Repository name ${{ github.repository }}" 
       - name: print all variables under github
-        run: "${{ toJson(github) }}"
+        run: echo "${{ toJson(github) }}"
           
